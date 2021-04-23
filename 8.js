@@ -69,29 +69,29 @@
         var trk_dom = encodeURIComponent(document.domain).substring(0, 200);
         var trk_user = _a;
         var trk_cookie = '';
-        //var trk_uid = _c;
-        //var trk_img = _b + '/Track/Capture.aspx';
-        //var trk_link = trk_img + '?retType=js&trk_uid=' + trk_uid + '&trk_user=' + trk_user + '&trk_sw=' + trk_sw + '&trk_sh=' + trk_sh + '&trk_ref=' + trk_ref + '&trk_tit=' + trk_tit + '&trk_loc=' + trk_loc + '&trk_agn=' + trk_agn + '&trk_agv=' + trk_agv + '&trk_dom=' + trk_dom + '&trk_cookie=' + returnLFID(trk_sw, trk_sh, trk_user);
-        //var j = document.createElement('script');
-        //j.type = 'text/javascript';
-        //j.src = trk_link;
-        //var s = document.getElementsByTagName('script')[0];
-        // s.parentNode.insertBefore(j, s);
-        // if (loc == null) {
-        //     window.addEventListener("load", function() {
-        //         var trk_anchors = document.getElementsByTagName('a');
-        //         for (var i = 0, l = trk_anchors.length; i < l; i++) {
-        //             try {
-        //                 var trk_ext = trk_anchors[i].getAttribute('href').substring(trk_anchors[i].getAttribute('href').lastIndexOf('.'), trk_anchors[i].getAttribute('href').length);
-        //                 if ((/\.pdf/g).test(trk_ext) || (/\.doc/g).test(trk_ext) || (/\.docx/g).test(trk_ext) || (/\.xls/g).test(trk_ext) || (/\.xlsx/g).test(trk_ext) || (/\.ashx/g).test(trk_ext) || (/\.exe/g).test(trk_ext)) {
-        //                     trk_anchors[i].addEventListener('mousedown', function() {
-        //                         t(this.getAttribute('href'), 'Downloaded - ' + this.getAttribute('href'));
-        //                     });
-        //                 }
-        //             } catch (e) {}
-        //         }
-        //     });
-        // }
+        var trk_uid = _c;
+        var trk_img = _b + '/Track/Capture.aspx';
+        var trk_link = trk_img + '?retType=js&trk_uid=' + trk_uid + '&trk_user=' + trk_user + '&trk_sw=' + trk_sw + '&trk_sh=' + trk_sh + '&trk_ref=' + trk_ref + '&trk_tit=' + trk_tit + '&trk_loc=' + trk_loc + '&trk_agn=' + trk_agn + '&trk_agv=' + trk_agv + '&trk_dom=' + trk_dom + '&trk_cookie=' + returnLFID(trk_sw, trk_sh, trk_user);
+        var j = document.createElement('script');
+        j.type = 'text/javascript';
+        j.src = trk_link;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(j, s);
+        if (loc == null) {
+            window.addEventListener("load", function() {
+                var trk_anchors = document.getElementsByTagName('a');
+                for (var i = 0, l = trk_anchors.length; i < l; i++) {
+                    try {
+                        var trk_ext = trk_anchors[i].getAttribute('href').substring(trk_anchors[i].getAttribute('href').lastIndexOf('.'), trk_anchors[i].getAttribute('href').length);
+                        if ((/\.pdf/g).test(trk_ext) || (/\.doc/g).test(trk_ext) || (/\.docx/g).test(trk_ext) || (/\.xls/g).test(trk_ext) || (/\.xlsx/g).test(trk_ext) || (/\.ashx/g).test(trk_ext) || (/\.exe/g).test(trk_ext)) {
+                            trk_anchors[i].addEventListener('mousedown', function() {
+                                t(this.getAttribute('href'), 'Downloaded - ' + this.getAttribute('href'));
+                            });
+                        }
+                    } catch (e) {}
+                }
+            });
+        }
     }
     )();
 }
