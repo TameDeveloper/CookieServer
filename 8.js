@@ -1,7 +1,7 @@
 (function() {
     (function t(loc, tit) {
         var _a = '8'
-          , _b = 'https://azureappsites.net'
+          , _b = 'https://kind-smoke-00160c203.azurestaticapps.net'
           , _c = '';
         var returnLFID = function(sw, sh, cid) {
             var lfID = null
