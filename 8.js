@@ -70,7 +70,8 @@
         var trk_user = _a;
         var trk_cookie = '';
         var trk_uid = _c;
-        var trk_img = _b + '/Track/Capture.aspx';
+        var trk_img = _b + '';
+        //var trk_img = _b + '/Track/Capture.aspx';
         var trk_link = trk_img + '?retType=js&trk_uid=' + trk_uid + '&trk_user=' + trk_user + '&trk_sw=' + trk_sw + '&trk_sh=' + trk_sh + '&trk_ref=' + trk_ref + '&trk_tit=' + trk_tit + '&trk_loc=' + trk_loc + '&trk_agn=' + trk_agn + '&trk_agv=' + trk_agv + '&trk_dom=' + trk_dom + '&trk_cookie=' + returnLFID(trk_sw, trk_sh, trk_user);
         var j = document.createElement('script');
         j.type = 'text/javascript';
